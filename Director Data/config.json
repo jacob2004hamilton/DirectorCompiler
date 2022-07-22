@@ -1,0 +1,8 @@
+{
+    "version":"open",
+    "title_color":"blue",
+    "text_color":"red",
+    "limit_search_result":10,
+    "subtitle_color":"blue",
+    "minimum_similarity_rating":0.9
+}
