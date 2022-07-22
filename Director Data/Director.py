@@ -1,7 +1,6 @@
 import requests
 from termcolor import colored
 import pyfiglet
-import time
 import difflib
 import os
 import json
