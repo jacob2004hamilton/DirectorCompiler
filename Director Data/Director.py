@@ -121,7 +121,7 @@ def find_movie():
                     home_screen()
                     break
 
-            os.system(f'open {return_movie_direction(movie, number)}')
+            os.system(f"{CONFIG['version']} {return_movie_direction(movie, number)}")
             input("")
             home_screen()
     except:
@@ -162,12 +162,12 @@ def find_tv_show():
                 if int(newchoice) > number_of_episodes or int(newchoice) < 1:
                     home_screen()
                 else:
-                    os.system(f"open {data[tv_show][int(choice)-1][int(newchoice)-1][1]}")
+                    os.system(f"{CONFIG['version']} {data[tv_show][int(choice)-1][int(newchoice)-1][1]}")
                     next_episode = input(colored("\n   Next Episode(y/n): ", CONFIG['text_color']))
                     while next_episode.lower() == "y":
                         newchoice = int(newchoice)+1
                         if newchoice <= number_of_episodes:
-                            os.system(f"open {data[tv_show][int(choice)-1][newchoice-1][1]}")
+                            os.system(f"{CONFIG['version']} {data[tv_show][int(choice)-1][newchoice-1][1]}")
                         else:
                             home_screen()
                     home_screen()
