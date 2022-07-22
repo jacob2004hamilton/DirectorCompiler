@@ -16,6 +16,12 @@ Clone the repository onto your machine.
 
 Install the neccesary python libraries in the requirements.txt
 
+Change the "version" in config.json to match your operating system:
+
+MacOS -> "open"
+Windows -> "start"
+Linux -> "xdg-open"
+
 Run the python script and enjoy.
 
 ## Customisation
